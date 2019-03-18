@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+
+  mysql_server:
+    image: marekhadas9/lampstack:latest
+    ports:
+      - 3306:3306
+      - 80:80
+    volumes:
+      - /var/lib/mysql:/var/lib/mysql
+      - /home/init.sql:/data/application/init.sql
+      - /home/my.cnf:/etc/mysql/my.cnf
+      - /home:/data/application/
+      - /home/replication:/home/replication

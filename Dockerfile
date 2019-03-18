@@ -23,8 +23,9 @@ RUN dpkg -i mysql-apt-config_0.8.10-1_all.deb
 RUN apt update
 RUN apt-get -yq install mysql-server
 
-COPY /apache2.conf /etc/apache2/apache2.conf
-COPY /php.ini /etc/php/7.2/apache2/php.ini
+#COPY /apache2.conf /etc/apache2/apache2.conf
+#COPY /php.ini /etc/php/7.2/apache2/php.ini
+COPY my.cnf /etc/mysql/my.cnf
 
 RUN wget https://dl-ssl.google.com/dl/linux/direct/mod-pagespeed-stable_current_amd64.deb
 RUN dpkg -i mod-pagespeed-*.deb

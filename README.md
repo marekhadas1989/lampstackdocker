@@ -1,2 +1,2 @@
 # lampstackdocker
-LAMP Stack docker
+FROM GIT README.md

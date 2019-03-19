@@ -35,4 +35,6 @@ RUN a2enmod rewrite
 
 EXPOSE 80
 EXPOSE 3306
-CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
+
+COPY /docker-entrypoint.sh /
+ENTRYPOINT ["docker-entrypoint.sh"]

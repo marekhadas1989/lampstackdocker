@@ -6,6 +6,7 @@ services:
     image: marekhadas9/lampstack:arm
     ports:
       - 80:80
+      - 443:443
       - 3306:3306
     volumes:
       - /docker_lamp/persist_www:/var/www/html

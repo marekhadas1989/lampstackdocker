@@ -16,7 +16,7 @@
 
 1. Certbot for HTTP encryption
 2. phpMyAdmin 4.6.6
-3. MySQL8.0.15
+3. MySQL 8.0.15
 4. Apache/2.4.29
 <ul>
    <li>OpenSSL</li>
@@ -71,7 +71,7 @@
 </ul>
 
 <h1>ARM Variant</h1>
-
+Apart from minor differences as listed below it has pretty much the same specs.<br>
 Known Limitations
 
 * By 03/2019 Google Page Speed is not available for ARM microarchitecture

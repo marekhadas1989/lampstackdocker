@@ -7,13 +7,6 @@
 <h3>Apache/2.4.29<h3>
 <ul>
    <li>OpenSSL</li>
-   <li>PDO PHP</li>
-   <li>Mbstring</li>
-   <li>Tokenizer</li>
-   <li>XML</li>
-   <li>Ctype</li>
-   <li>JSON</li>
-   <li>BCMath</li>
 </ul>
    
 <h3>PHP 7.2.15 (Laravel ready)<h3>
@@ -28,3 +21,10 @@
    <li>JSON</li>
    <li>BCMath</li>
 </ul>
+
+<h1>ARM Variant</h1>
+
+Known Limitations
+
+* So far Google Page Speed is not available for ARM microarchitecture
+* Latest version of MySQL for ARM during the built was 5.7

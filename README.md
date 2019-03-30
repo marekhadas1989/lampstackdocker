@@ -3,7 +3,7 @@
 [ ARM / x86 ] LAMP STACK docker-based environment 
 
 
-<h3>PHP 7.2.15<h3>
+<h3>PHP 7.2.15 (Laravel ready)<h3>
 
 <ul>
    <li>OpenSSL</li>

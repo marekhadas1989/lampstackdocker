@@ -28,3 +28,8 @@ Known Limitations
 
 * So far Google Page Speed is not available for ARM microarchitecture
 * Latest version of MySQL for ARM during the built was 5.7
+
+
+<h1>Quick Start</h1>
+
+<span>Quick start can be done by either issuing following command or by using docker-compose file provided for each platform</span>

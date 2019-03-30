@@ -79,10 +79,11 @@ Known Limitations
 
 <h1>Quick Start</h1>
 
-<span>
+<small>
    Quick start can be done by either issuing following commands or by using <b>docker-compose</b> file provided for each platform</br>
-   * Persisting data can be done by passing additional "-v /docker_lamp/persist_www:/var/www/html/" parameter which will map internal "/var/www/html" folder into "/docker_lamp/persist_www" on your local machine. For docker-compose option persistency is set by ddefault.
-</span>
+   * Data persistency data can be done by passing additional "-v /docker_lamp/persist_www:/var/www/html/" parameter which will map internal "/var/www/html" folder into "/docker_lamp/persist_www" on your local machine. For docker-compose option persistency is set by ddefault.
+</small>
+
 <br>
 <h5>x86</h5>
 <b>$ docker run -p 3306:3306 -p 80:80 -d marekhadas9/lampstack</b><br/>

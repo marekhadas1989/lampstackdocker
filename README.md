@@ -86,9 +86,10 @@ Known Limitations
 
 <br>
 <h5>x86</h5>
+```
 <b>$ docker run -p 3306:3306 -p 80:80 -d marekhadas9/lampstack</b><br/>
 <b>$ docker-compose -f /path_to_file/composeX86.yaml up</b><br/>
 <h5>ARM</h5>
 <b>$ docker run -p 3306:3306 -p 80:80 -d marekhadas9/lampstack:arm</b><br/>
 <b>$ docker-compose -f /path_to_file/composeARM.yaml up</b><br/>
-
+```

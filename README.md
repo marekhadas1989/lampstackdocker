@@ -82,7 +82,8 @@ Quick start can be done by either issuing following commands or by using <b>dock
 
 * Data persistency can be done by passing additional "-v /docker_lamp/persist_www:/var/www/html" parameter, this will map internal "/var/www/html" folder into "/docker_lamp/persist_www" on your local machine.<br> In the same way MySQL data can be mapped by passing again "-v /docker_lamp/persist_mysql:/var/lib/mysql" <br><br>
 It is entirely up to you where you want to store the data, this is just an example of how to use it.
-<br>
+
+
 * By using provided <b>docker-compose</b> files data persistency will be turned on automatically for both MySQL and Apache.
 
 <br>

@@ -90,7 +90,8 @@ It is entirely up to you where you want to store the data, this is just an examp
 <h5>x86</h5>
 
 ```
-$ docker run -p 3306:3306 -p 80:80 -d marekhadas9/lampstack
+$ docker run -p 3306:3306 -p 80:80 -d marekhadas9/lampstack:arm
+$ docker run -p 3306:3306 -p 80:80 -d -v /docker_lamp/persist_mysql:/var/lib/mysql -v /docker_lamp/persist_www:/var/www/html marekhadas9/lampstack
 $ docker-compose -f /path_to_file/composeX86.yaml up
 ```
 
@@ -98,5 +99,6 @@ $ docker-compose -f /path_to_file/composeX86.yaml up
 
 ```
 $ docker run -p 3306:3306 -p 80:80 -d marekhadas9/lampstack:arm
+$ docker run -p 3306:3306 -p 80:80 -d -v /docker_lamp/persist_mysql:/var/lib/mysql -v /docker_lamp/persist_www:/var/www/html marekhadas9/lampstack:arm
 $ docker-compose -f /path_to_file/composeARM.yaml up
 ```

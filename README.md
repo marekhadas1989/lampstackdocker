@@ -71,7 +71,7 @@
 </ul>
 
 <h1>ARM Variant</h1>
-Apart from minor differences as listed below it has pretty much the same specs.<br/>
+Apart from minor differences as listed below it has pretty much the same specs.<br/><br/>
 Known Limitations<br/>
 
 * By 03/2019 Google Page Speed is not available for ARM microarchitecture

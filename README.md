@@ -86,7 +86,6 @@ It is entirely up to you where you want to store the data, this is just an examp
 
 * By using provided <b>docker-compose</b> files data persistency will be turned on automatically for both MySQL and Apache.
 
-<br>
 <h5>x86</h5>
 
 ```

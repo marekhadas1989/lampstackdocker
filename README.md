@@ -72,7 +72,7 @@
 
 <h1>ARM Variant</h1>
 Apart from minor differences as listed below it has pretty much the same specs.<br>
-Known Limitations
+Known Limitations<br>
 
 * By 03/2019 Google Page Speed is not available for ARM microarchitecture
 * Latest available version of MySQL for ARM during the built was 5.7

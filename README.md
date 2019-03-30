@@ -20,6 +20,36 @@
 <h3>Apache/2.4.29<h3>
 <ul>
    <li>OpenSSL</li>
+   <li>core_module (static)</li>
+   <li>so_module (static)</li>
+   <li>watchdog_module (static)</li>
+   <li>http_module (static)</li>
+   <li>log_config_module (static)</li>
+   <li>logio_module (static)</li>
+   <li>version_module (static)</li>
+   <li>unixd_module (static)</li>
+   <li>access_compat_module (shared)</li>
+   <li>alias_module (shared)</li>
+   <li>auth_basic_module (shared)</li>
+   <li>authn_core_module (shared)</li>
+   <li>authn_file_module (shared)</li>
+   <li>authz_core_module (shared)</li>
+   <li>authz_host_module (shared)</li>
+   <li>authz_user_module (shared)</li>
+   <li>autoindex_module (shared)</li>
+   <li>deflate_module (shared)</li>
+   <li>dir_module (shared)</li>
+   <li>env_module (shared)</li>
+   </li>filter_module (shared)</li>
+   <li>mime_module (shared)</li>
+   <li>mpm_prefork_module (shared)</li>
+   <li>negotiation_module (shared)</li>
+   <li><b>pagespeed_module (shared)<b></li>
+   <li>php7_module (shared)</li>
+   <li>reqtimeout_module (shared)</li>
+   <li>rewrite_module (shared)</li>
+   <li>setenvif_module (shared)</li>
+   <li>status_module (shared)</li>
 </ul>
    
 <h3>PHP 7.2.15 (Laravel ready)<h3>

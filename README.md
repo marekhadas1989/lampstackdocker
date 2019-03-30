@@ -72,10 +72,10 @@
 
 <h1>ARM Variant</h1>
 Apart from minor differences as listed below it has pretty much the same specs.<br/><br/>
-Known Limitations<br/><br/>
+Known Limitations:<br/><br/>
 
-* By 03/2019 Google Page Speed is not available for ARM microarchitecture
-* Latest available version of MySQL for ARM during the built was 5.7
+* By 01/03/2019 Google Page Speed was not availabled for ARM microarchitecture.
+* Latest available version of MySQL for ARM based devices during that built was 5.7.
 
 <h1>Quick Start</h1>
 Quick start can be done by either issuing following commands or by using <b>docker-compose</b> files provided for each platform</br></br>

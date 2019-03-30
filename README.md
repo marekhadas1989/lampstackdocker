@@ -16,7 +16,7 @@
 
 <h3>Certbot for HTTP encryption<h3>
 <h3>phpMyAdmin 4.6.6<h3>
-      
+<h3>MySQL8.0.15<h3>
 <h3>Apache/2.4.29<h3>
 <ul>
    <li>OpenSSL</li>

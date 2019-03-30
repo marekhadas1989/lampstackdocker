@@ -1,6 +1,6 @@
 # LAMP STACK for DOCKER based on Ubuntu 18.04.2 Image
 
-[ ARM / x86 ] LAMP STACK docker-based environment 
+[ ARM / x86 ] LAMP STACK docker-based environment designed to work on either ARM architecture based systems as well as standard x86 platform. 
 
 <h1>x86 Variant consists of following packages</h1>
 

@@ -36,8 +36,6 @@ RUN apt-get -yq install php7.2-gd
 RUN apt-get -yq install php7.2-mysql 
 RUN apt-get -yq install php7.2-xml 
 RUN apt-get -yq install libapache2-mod-php7.2 
-RUN apt-get -yq install php7.2-mysql 
-RUN apt-get -yq install php7.2-gd 
 RUN apt-get -yq install php7.2-bcmath 
 RUN apt-get -yq install php-imagick
 

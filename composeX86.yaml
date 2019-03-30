@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+
+  lamp:
+    image: marekhadas9/lampstack
+    ports:
+      - 80:80
+      - 3306:3306
+    volumes:
+      - /docker_lamp/persist_www:/var/www/html
+      - /docker_lamp/persist_mysql:/var/lib/mysql

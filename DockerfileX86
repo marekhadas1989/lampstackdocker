@@ -99,7 +99,7 @@ COPY ./conf/my.cnf ./etc/my.cnf
 
 EXPOSE 3306 80
 
-RUN mkdir /var/run/mysqld
+RUN mkdir -p /var/run/mysqld
 RUN chmod 777 /var/run/mysqld
 RUN chmod 0444 ./etc/my.cnf
 RUN chown mysql:mysql ./etc/my.cnf

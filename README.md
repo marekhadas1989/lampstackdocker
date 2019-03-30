@@ -32,6 +32,9 @@ Known Limitations
 <h1>Quick Start</h1>
 
 <span>Quick start can be done by either issuing following commands or by using docker-compose file provided for each platform</span>
+<br>
+<h5>x86</h5>
 <b>$ docker run marekhadas9/lampstack</b><br/>
+<h5>ARM</h5>
 <b>$ docker run marekhadas9/lampstack:arm</b>
 

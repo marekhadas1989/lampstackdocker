@@ -40,7 +40,7 @@
    <li>deflate_module (shared)</li>
    <li>dir_module (shared)</li>
    <li>env_module (shared)</li>
-   </li>filter_module (shared)</li>
+   <li>filter_module (shared)</li>
    <li>mime_module (shared)</li>
    <li>mpm_prefork_module (shared)</li>
    <li>negotiation_module (shared)</li>

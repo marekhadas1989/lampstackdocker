@@ -78,11 +78,9 @@ Known Limitations
 * Latest available version of MySQL for ARM during the built was 5.7
 
 <h1>Quick Start</h1>
+Quick start can be done by either issuing following commands or by using <b>docker-compose</b> file provided for each platform</br>
+* Data persistency data can be done by passing additional "-v /docker_lamp/persist_www:/var/www/html/" parameter which will map internal "/var/www/html" folder into "/docker_lamp/persist_www" on your local machine. For docker-compose option persistency is set by ddefault.
 
-<small>
-   Quick start can be done by either issuing following commands or by using <b>docker-compose</b> file provided for each platform</br>
-   * Data persistency data can be done by passing additional "-v /docker_lamp/persist_www:/var/www/html/" parameter which will map internal "/var/www/html" folder into "/docker_lamp/persist_www" on your local machine. For docker-compose option persistency is set by ddefault.
-</small>
 
 <br>
 <h5>x86</h5>

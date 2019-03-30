@@ -14,10 +14,10 @@
    
 <h1>x86 Variant consists of following packages</h1>
 
-<h3>Certbot for HTTP encryption<h3>
-<h3>phpMyAdmin 4.6.6<h3>
-<h3>MySQL8.0.15<h3>
-<h3>Apache/2.4.29<h3>
+1. Certbot for HTTP encryption
+2. phpMyAdmin 4.6.6
+3. MySQL8.0.15
+4. Apache/2.4.29
 <ul>
    <li>OpenSSL</li>
    <li>core_module (static)</li>
@@ -52,7 +52,7 @@
    <li>status_module (shared)</li>
 </ul>
    
-<h3>PHP 7.2.15 (Laravel ready)<h3>
+5. PHP 7.2.15 (Laravel ready)
 <ul>
    <li>Curl 7.58.0</li>
    <li>Ctype</li>

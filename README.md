@@ -15,7 +15,7 @@
 <h1>x86 Variant consists of following packages</h1>
 
 <h3>Certbot for HTTP encryption<h3>
-<h3>phpMyAdmin<h3>
+<h3>phpMyAdmin 4.6.6<h3>
       
 <h3>Apache/2.4.29<h3>
 <ul>

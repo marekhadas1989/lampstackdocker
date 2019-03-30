@@ -90,8 +90,8 @@ Known Limitations
 
 $ docker run -p 3306:3306 -p 80:80 -d marekhadas9/lampstack
 $ docker-compose -f /path_to_file/composeX86.yaml up
-
 ```
+
 <h5>ARM</h5>
 ```
 $ docker run -p 3306:3306 -p 80:80 -d marekhadas9/lampstack:arm

@@ -44,7 +44,7 @@
    <li>mime_module (shared)</li>
    <li>mpm_prefork_module (shared)</li>
    <li>negotiation_module (shared)</li>
-   <li><b>pagespeed_module (shared)<b></li>
+   <li><b>pagespeed_module (shared)</b></li>
    <li>php7_module (shared)</li>
    <li>reqtimeout_module (shared)</li>
    <li>rewrite_module (shared)</li>
@@ -78,7 +78,7 @@ Known Limitations:<br/><br/>
 * Latest available version of MySQL for ARM based devices during that built was 5.7.
 
 <h1>Quick Start</h1>
-Quick start can be done by either issuing following commands or by using <b>docker-compose</b> files provided for each platform</br></br>
+Quick start can be done by either issuing following commands or by using <b>docker-compose</b> files provided for each platform.</br></br>
 
 * Data persistency can be done by passing additional "-v /docker_lamp/persist_www:/var/www/html" parameter, this will map internal "/var/www/html" folder into "/docker_lamp/persist_www" on your local machine.<br> In the same way MySQL data can be mapped by passing again "-v /docker_lamp/persist_mysql:/var/lib/mysql" <br><br>
 It is entirely up to you where you want to store the data, this is just an example of how to use it.

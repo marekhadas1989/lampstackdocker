@@ -102,3 +102,4 @@ $ docker run -p 3306:3306 -p 80:80 -d -v /docker_lamp/persist_mysql:/var/lib/mys
 $ docker-compose -f /path_to_file/composeARM.yaml up
 ```
 <h1>Bringing up SSL to life<h1>
+SSL certification process can be sorted out by using <b>certboot</b> this tool is intended to create free globally trusted certificate.

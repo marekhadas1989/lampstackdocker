@@ -41,7 +41,7 @@
 
 Known Limitations
 
-* As of 03/2019 Google Page Speed is not available for ARM microarchitecture
+* By 03/2019 Google Page Speed is not available for ARM microarchitecture
 * Latest available version of MySQL for ARM during the built was 5.7
 
 <h1>Quick Start</h1>

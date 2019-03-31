@@ -126,7 +126,7 @@ Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your o
  
     ```$ docker container ls```
 
-3. You need to know at least first 3 characters of <b>container id</b> returned by above command (You can use as many characters as you wish, it is just about identifying unique container especially if there is more than one having similar hash running on your machine).<br>
+3. You need to know at least first 3 characters of <b>container id</b> returned by above command (You can use as many characters as you wish, it is just about identifying unique container especially if there is more than one having similar <b>container id</b> running on your machine).<br>
 4. Now using mentioned <b>container id</b> run:
 
     ```$ docker exec -it 7ce bash```

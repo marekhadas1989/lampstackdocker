@@ -5,8 +5,7 @@ echo "######################################################"
 echo "MySQL INIT STARTED $(date)"
 echo "######################################################"
 echo "######################################################"
-echo "                                                      "
-
+echo "      											    "
 
 /usr/bin/mysqld_safe &
 
@@ -18,12 +17,12 @@ while [[ RET -ne 0 ]]; do
     RET=$?
 done
 
-mysql -uroot -e "CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin'"
+mysql -uroot -e "CREATE USER IF NOT EXISTS 'admin'@'localhost' IDENTIFIED BY 'admin'"
 mysql -uroot -e "GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION"
 
 mysql -uroot < /usr/share/phpmyadmin/sql/create_tables.sql
 
-mysql -uroot -e "CREATE USER 'root'@'%' IDENTIFIED BY 'root'"
+mysql -uroot -e "CREATE USER IF NOT EXISTS 'root'@'%' IDENTIFIED BY 'root'"
 mysql -uroot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION"
 
 echo "                                                                       "

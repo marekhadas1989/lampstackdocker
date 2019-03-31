@@ -9,6 +9,6 @@ services:
       - 443:443
       - 3306:3306
     volumes:
-      - /docker_lamp/persist_www:/var/www/html
-      - /docker_lamp/persist_mysql:/var/lib/mysql
+      - /var/www/html:/var/www/html
+      - /var/lib/mysql:/var/lib/mysql
       - /cert:/etc/letsencrypt

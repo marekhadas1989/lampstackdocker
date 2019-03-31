@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="806b4df2-1dd4-4b9b-8e83-b92dac8df4f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="806b4df2-1dd4-4b9b-8e83-b92dac8df4f2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +23,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="323">
-                <caret line="136" column="28" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
+              <first_editor relative-caret-position="51">
+                <caret line="3" column="122" selection-start-line="3" selection-start-column="122" selection-end-line="3" selection-end-column="122" />
               </first_editor>
               <second_editor />
             </state>
@@ -55,10 +53,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-3384" />
-    <option name="y" value="121" />
-    <option name="width" value="1400" />
-    <option name="height" value="784" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -117,21 +115,21 @@
       <option name="presentableId" value="Default" />
       <updated>1553952466875</updated>
       <workItem from="1553952468066" duration="94000" />
-      <workItem from="1553955246860" duration="16614000" />
+      <workItem from="1553955246860" duration="17406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16708000" />
+    <option name="totallyTimeSpent" value="17500000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3368" y="28" width="1696" height="1026" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0702934" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2543624" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Command Line Tools Console" visible="true" weight="0.26091826" />
+      <window_info active="true" anchor="bottom" id="Command Line Tools Console" visible="true" weight="0.33002833" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -212,8 +210,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="323">
-            <caret line="136" column="28" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
+          <first_editor relative-caret-position="51">
+            <caret line="3" column="122" selection-start-line="3" selection-start-column="122" selection-end-line="3" selection-end-column="122" />
           </first_editor>
           <second_editor />
         </state>

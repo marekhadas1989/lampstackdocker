@@ -119,7 +119,7 @@ Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your o
 
     ```$ sudo su```
 
-    ```$ docker-compose -f composeX86ssl.yaml up```
+    ```$ docker-compose -f composeX86Ssl.yaml up```
     
     ![GitHub Logo](https://raw.githubusercontent.com/marekhadas1989/lampstackdocker/master/guide/howto1.PNG)
 

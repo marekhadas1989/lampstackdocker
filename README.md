@@ -119,6 +119,8 @@ Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your o
     ```$ sudo su```
 
     ```$ docker-compose -f composeX86ssl.yaml up```
+    
+    ![GitHub Logo](https://raw.githubusercontent.com/marekhadas1989/lampstackdocker/master/guide/howto1.PNG)
 
 2. Now it's time to identify unique <b>container id</b>.<br/>
    To do so while your container is running open another terminal window and run:<br/> 
@@ -126,6 +128,8 @@ Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your o
     ```$ sudo su```
  
     ```$ docker container ls```
+     
+    ![GitHub Logo](https://raw.githubusercontent.com/marekhadas1989/lampstackdocker/master/guide/howto2.PNG)
 
 3. You need to know at least first 3 characters of <b>container id</b> returned by above command (You can use as many characters as you wish, it is just about identifying unique container especially if there is more than one having similar <b>container id</b> running on your machine).<br>
 4. Now using mentioned <b>container id</b> run:

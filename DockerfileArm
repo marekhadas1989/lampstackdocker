@@ -21,6 +21,7 @@ RUN apt-get -yq install supervisor
 ####################################################
 
 RUN apt-get install -yq apache2
+RUN a2enmod rewrite
 
 ####################################################
 ###############PHP SECTION##########################

@@ -84,7 +84,6 @@ COPY ./helpers/mysqld_supervisor.sh ./helpers/mysqld_supervisor.sh
 COPY ./helpers/apache2_supervisor.sh ./helpers/apache2_supervisor.sh
 
 COPY ./conf/my.cnf ./etc/my.cnf
-COPY ./conf/default-ssl.conf ./etc/apache2/sites-enabled/default-ssl.conf
 
 EXPOSE 3306 80 443
 

@@ -102,6 +102,24 @@ $ docker run -p 3306:3306 -p 80:80 -d -v /docker_lamp/persist_mysql:/var/lib/mys
 $ docker-compose -f /path_to_file/composeARM.yaml up
 ```
 <h1>Bringing up SSL to life</h1>
-SSL certification process can be sorted out by using <b>certboot</b> this tool is intended to create free globally trusted certificate.
-certbot --apache certonly
--v /etc/letsencrypt/live/youtubemate.ml/
+SSL certification process can be sorted out by using <a href="https://certbot.eff.org/">certboot</a> tool included in SSL version of provided images</a>.<br> Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your own free globally trusted SSL certificate.<br/><br/>
+
+1. Download <b>composeX86ssl.yaml</b> from my git repository and put it on your server, then run from command line.<br/> <br/>
+```$ sudo su```<br/>
+```$ docker-compose -f composeX86ssl.yaml up```
+<br/><br/>
+
+2. Now it's time to identify unique <b>container id</b>. To do so while your container is running open another terminal window and run:<br/> <br/> 
+ ```$ sudo su```<br><br>
+ ```$ docker container ls```<br>
+<br/>
+3. You need to know at least first 3 characters of <b>container id</b> returned by above command (You can use as many characters as you wish, it is just about identifying unique container especially if there is more than one having similar hash running on your machine).<br>
+4. Now using mentioned <b>container id</b> run:<br><br>
+ ```$ docker exec -it 7ce bash```<br><br>
+ Then run:<br><br>
+ ```certbot --apache certonly```<br><br>
+ To issue your certificate and follow the guidelines displayed on your screen<br>
+4. Download <b>/conf/default-ssl.conf</b> from my git repository and update it accordingly to the domain name for which you were issuing certificate earlier.
+5. Put your file in <b>/etc/default-ssl.conf</b>
+6. Restart your container, you should be all set with SSL.
+   

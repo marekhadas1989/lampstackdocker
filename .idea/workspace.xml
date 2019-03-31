@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="806b4df2-1dd4-4b9b-8e83-b92dac8df4f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/DockerfileArmSSL" beforeDir="false" afterPath="$PROJECT_DIR$/DockerfileArmSSL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DockerfileX86ssl" beforeDir="false" afterPath="$PROJECT_DIR$/DockerfileX86ssl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composeARMssl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/composeARMssl.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composeX86ssl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/composeX86ssl.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/apache2.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/apache2.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/default-ssl.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/default-ssl.conf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +31,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="24">
-                <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+              <first_editor relative-caret-position="1156">
+                <caret line="116" column="47" selection-start-line="116" selection-start-column="47" selection-end-line="116" selection-end-column="47" />
               </first_editor>
               <second_editor />
             </state>
@@ -37,6 +43,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -51,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -89,6 +98,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -113,20 +123,21 @@
       <option name="presentableId" value="Default" />
       <updated>1553952466875</updated>
       <workItem from="1553952468066" duration="94000" />
-      <workItem from="1553955246860" duration="7994000" />
+      <workItem from="1553955246860" duration="13814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8088000" />
+    <option name="totallyTimeSpent" value="13908000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2261745" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.077181205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Command Line Tools Console" visible="true" weight="0.33002833" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -207,8 +218,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="24">
-            <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <first_editor relative-caret-position="1156">
+            <caret line="116" column="47" selection-start-line="116" selection-start-column="47" selection-end-line="116" selection-end-column="47" />
           </first_editor>
           <second_editor />
         </state>

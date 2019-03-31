@@ -2,12 +2,11 @@ version: '3.3'
 
 services:
 
-  lamp:
+  lampARM:
     image: marekhadas9/lampstack:arm
     ports:
-      - 80:80
-      - 443:443
-      - 3306:3306
+     - 80:80
+     - 3306:3306
     volumes:
-      - /var/www/html:/var/www/html
-      - /var/lib/mysql:/var/lib/mysql
+     - /var/www/html:/var/www/html
+     - /var/lib/mysql:/var/lib/mysql

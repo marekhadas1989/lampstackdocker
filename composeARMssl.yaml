@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
 
-  lamp:
+  lampARMssl:
     image: marekhadas9/lampstack:armssl
     ports:
       - 80:80
@@ -11,5 +11,5 @@ services:
     volumes:
       - /var/www/html:/var/www/html
       - /var/lib/mysql:/var/lib/mysql
-      - /etc/letsencrypt:/etc/letsencrypt 
+      - /etc/letsencrypt:/etc/letsencrypt
       - /etc/default-ssl.conf:/etc/apache2/sites-enabled/default-ssl.conf

@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
 
-  lamp:
+  lampX86:
     image: marekhadas9/lampstack:latest
     ports:
       - 80:80

@@ -1,13 +1,13 @@
-version: '3.3'
+version : '3.3'
 
-services:
+services :
 
-  lampX86:
-    image: marekhadas9/lampstack:latest
-    ports:
+  lampX86 :
+    image : marekhadas9/lampstack:latest
+    ports :
       - 80:80
       - 443:443
       - 3306:3306
-    volumes:
+    volumes :
       - /var/www/html:/var/www/html
       - /var/lib/mysql:/var/lib/mysql

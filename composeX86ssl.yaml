@@ -1,15 +1,15 @@
-version: '3.3'
+version : '3.3'
 
-services:
+services :
 
-  lampX86SSL:
-    image: marekhadas9/lampstack:ssl
-    ports:
+  lampX86SSL :
+    image : marekhadas9/lampstack:ssl
+    ports :
       - 80:80
       - 443:443
       - 3306:3306
-    volumes:
+    volumes :
       - /var/www/html:/var/www/html
       - /var/lib/mysql:/var/lib/mysql
-      - /etc/letsencrypt:/etc/letsencrypt 
+      - /etc/letsencrypt:/etc/letsencrypt
       - /etc/default-ssl.conf:/etc/apache2/sites-enabled/default-ssl.conf

@@ -1,8 +1,7 @@
-![GitHub Logo](https://raw.githubusercontent.com/marekhadas1989/lampstackdocker/master/logo.PNG)
-
 # LAMP STACK docker build based on Ubuntu 18.04.2 Image
 
 [ ARM / x86 ] LAMP STACK docker-based environment designed to work on either ARM architecture based systems as well as standard x86 platform. Depends on selected platform package availability may vary due to internal operation system limitations, please refer to the description below.
+
 <h3>Utils available out of the box regardles of selected platform<h3>
 <ul>
    <li>htop</li>

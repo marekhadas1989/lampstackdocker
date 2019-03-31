@@ -54,6 +54,16 @@ RUN apt update
 RUN apt-get -yq install mysql-server
 
 ####################################################
+###############CERTBOT SECTION######################
+####################################################
+
+RUN apt-get -yq install software-properties-common
+RUN add-apt-repository universe
+RUN add-apt-repository ppa:certbot/certbot
+RUN apt-get -yq  update
+RUN apt-get -yq install certbot python-certbot-apache
+
+####################################################
 ###############GOOGLE MOD PAGESPEED#################
 ####################################################
 
@@ -85,8 +95,9 @@ COPY ./helpers/mysqld_supervisor.sh ./helpers/mysqld_supervisor.sh
 COPY ./helpers/apache2_supervisor.sh ./helpers/apache2_supervisor.sh
 
 COPY ./conf/my.cnf ./etc/my.cnf
+COPY ./conf/default-ssl.conf ./etc/apache2/sites-enabled/default-ssl.conf
 
-EXPOSE 3306 80
+EXPOSE 3306 80 443
 
 RUN mkdir -p cert
 RUN chmod 0444 ./etc/my.cnf

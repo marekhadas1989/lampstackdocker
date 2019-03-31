@@ -21,8 +21,6 @@ RUN apt-get -yq install supervisor
 ####################################################
 
 RUN apt-get install -yq apache2
-RUN a2enmod rewrite 
-RUN a2enmod ssl
 
 ####################################################
 ###############PHP SECTION##########################
@@ -54,16 +52,6 @@ RUN apt update
 RUN apt-get -yq install mysql-server
 
 ####################################################
-###############CERTBOT SECTION######################
-####################################################
-
-RUN apt-get -yq install software-properties-common
-RUN add-apt-repository universe
-RUN add-apt-repository ppa:certbot/certbot
-RUN apt-get -yq  update
-RUN apt-get -yq install certbot python-certbot-apache
-
-####################################################
 ###############PHPMYADMIN###########################
 ####################################################
 
@@ -86,9 +74,8 @@ COPY ./helpers/mysqld_supervisor.sh ./helpers/mysqld_supervisor.sh
 COPY ./helpers/apache2_supervisor.sh ./helpers/apache2_supervisor.sh
 
 COPY ./conf/my.cnf ./etc/my.cnf
-COPY ./conf/apache2.conf ./etc/apache2.conf
 
-EXPOSE 3306 80 443
+EXPOSE 3306 80
 
 RUN mkdir -p /var/run/mysqld
 RUN chmod 0444 ./etc/my.cnf

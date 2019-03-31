@@ -21,8 +21,6 @@ RUN apt-get -yq install supervisor
 ####################################################
 
 RUN apt-get install -yq apache2
-RUN a2enmod rewrite 
-RUN a2enmod ssl
 
 ####################################################
 ###############PHP SECTION##########################
@@ -37,7 +35,7 @@ RUN apt-get -yq install php7.2-curl
 RUN apt-get -yq install php7.2-gd 
 RUN apt-get -yq install php7.2-mysql 
 RUN apt-get -yq install php7.2-xml 
-RUN apt-get -yq install libapache2-mod-php7.2 
+RUN apt-get -yq install libapache2-mod-php7.2
 RUN apt-get -yq install php7.2-bcmath 
 RUN apt-get -yq install php-imagick
 
@@ -54,13 +52,14 @@ RUN apt update
 RUN apt-get -yq install mysql-server
 
 ####################################################
-###############GOOGLE MOD PAGESPEED#################
+###############CERTBOT SECTION######################
 ####################################################
 
-RUN wget https://dl-ssl.google.com/dl/linux/direct/mod-pagespeed-stable_current_amd64.deb
-RUN dpkg -i mod-pagespeed-*.deb
-RUN apt-get -f install
-RUN rm mod-pagespeed-*.deb 
+RUN apt-get -yq install software-properties-common
+RUN add-apt-repository universe
+RUN add-apt-repository ppa:certbot/certbot
+RUN apt-get -yq  update
+RUN apt-get -yq install certbot python-certbot-apache
 
 ####################################################
 ###############PHPMYADMIN###########################
@@ -85,10 +84,11 @@ COPY ./helpers/mysqld_supervisor.sh ./helpers/mysqld_supervisor.sh
 COPY ./helpers/apache2_supervisor.sh ./helpers/apache2_supervisor.sh
 
 COPY ./conf/my.cnf ./etc/my.cnf
+COPY ./conf/default-ssl.conf ./etc/apache2/sites-enabled/default-ssl.conf
 
-EXPOSE 3306 80
+EXPOSE 3306 80 443
 
-RUN mkdir -p cert
+RUN mkdir -p /var/run/mysqld
 RUN chmod 0444 ./etc/my.cnf
 RUN chown mysql:mysql ./etc/my.cnf
 RUN chmod a+x ./start.sh

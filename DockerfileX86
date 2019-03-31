@@ -21,6 +21,8 @@ RUN apt-get -yq install supervisor
 ####################################################
 
 RUN apt-get install -yq apache2
+RUN a2enmod rewrite 
+RUN a2enmod ssl
 
 ####################################################
 ###############PHP SECTION##########################
@@ -69,7 +71,6 @@ RUN wget https://dl-ssl.google.com/dl/linux/direct/mod-pagespeed-stable_current_
 RUN dpkg -i mod-pagespeed-*.deb
 RUN apt-get -f install
 RUN rm mod-pagespeed-*.deb 
-RUN a2enmod rewrite 
 
 ####################################################
 ###############PHPMYADMIN###########################
@@ -94,6 +95,7 @@ COPY ./helpers/mysqld_supervisor.sh ./helpers/mysqld_supervisor.sh
 COPY ./helpers/apache2_supervisor.sh ./helpers/apache2_supervisor.sh
 
 COPY ./conf/my.cnf ./etc/my.cnf
+COPY ./conf/apache2.conf ./etc/apache2.conf
 
 EXPOSE 3306 80 443
 

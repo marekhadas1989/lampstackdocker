@@ -1,5 +1,7 @@
 #!/bin/bash
-mysqld --initialize-insecure > /dev/null 2>&1
+
 ./helpers/mysql_init.sh
+
+rm /var/lib/mysql
 
 supervisord -n

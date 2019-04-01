@@ -3,7 +3,7 @@ version : '3.3'
 services :
 
   lampX86SSL :
-    image : marekhadas9/lampstack:ssl
+    image : marekhadas9/lampstack:x86ssl
     ports :
       - 80:80
       - 443:443

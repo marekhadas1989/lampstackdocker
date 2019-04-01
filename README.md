@@ -72,7 +72,7 @@ Depends on selected platform package availability may vary due to internal opera
    <li>BCMath</li>
 </ul>
 
-<h1>ARM Variant</h1>
+<h1>ARM Variant (4.20.7-sunxi armv7l) 32-bit</h1>
 Apart from minor differences as listed below it has pretty much the same specs.
 <br/><br/>
 Known Limitations:
@@ -80,7 +80,7 @@ Known Limitations:
 
 * By 01/03/2019 Google Page Speed was not available for ARM microarchitecture.
 
-* Latest available version of MySQL for ARM based devices during that built was 5.7.
+* Latest available version of MySQL for ARM based devices during that built was 5.7.25.
 
 <h1>Quick Start</h1>
 
@@ -165,3 +165,4 @@ Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your o
       software like <a href="https://www.mysql.com/products/workbench/">MySQL Workbench</a> or <a href="https://www.heidisql.com/">HeidiSQL</a>
       
       ![GitHub Logo](https://raw.githubusercontent.com/marekhadas1989/lampstackdocker/master/guide/phpmyadmin.PNG)
+      

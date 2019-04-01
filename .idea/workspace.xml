@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="806b4df2-1dd4-4b9b-8e83-b92dac8df4f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DockerfileArm" beforeDir="false" afterPath="$PROJECT_DIR$/DockerfileArm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DockerfileX86" beforeDir="false" afterPath="$PROJECT_DIR$/DockerfileX86" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composeX86.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/composeX86.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/mysql_init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/mysql_init.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +25,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="806">
-                <caret line="163" column="146" lean-forward="true" selection-start-line="163" selection-start-column="131" selection-end-line="163" selection-end-column="146" />
+              <first_editor relative-caret-position="758">
+                <caret line="166" column="110" selection-start-line="166" selection-start-column="110" selection-end-line="166" selection-end-column="110" />
               </first_editor>
               <second_editor />
             </state>
@@ -181,12 +177,12 @@
       <updated>1553952466875</updated>
       <workItem from="1553952468066" duration="94000" />
       <workItem from="1553955246860" duration="18220000" />
-      <workItem from="1554144717266" duration="2633000" />
+      <workItem from="1554144717266" duration="2997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20947000" />
+    <option name="totallyTimeSpent" value="21311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3368" y="28" width="1696" height="1026" extended-state="6" />
@@ -299,8 +295,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="806">
-            <caret line="163" column="146" lean-forward="true" selection-start-line="163" selection-start-column="131" selection-end-line="163" selection-end-column="146" />
+          <first_editor relative-caret-position="758">
+            <caret line="166" column="110" selection-start-line="166" selection-start-column="110" selection-end-line="166" selection-end-column="110" />
           </first_editor>
           <second_editor />
         </state>

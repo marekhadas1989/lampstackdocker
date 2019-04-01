@@ -123,8 +123,8 @@ Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your o
     
     ![GitHub Logo](https://raw.githubusercontent.com/marekhadas1989/lampstackdocker/master/guide/howto1.PNG)
 
-2. Now it's time to identify unique <b>container id</b>.<br/>
-   To do so while your container is running open another terminal window and run:<br/> 
+2. Now it's time to identify your current unique <b>container id</b>.<br/>
+   To do so open another terminal window and run while your container is running:<br/> 
 
     ```$ sudo su```
  
@@ -163,3 +163,5 @@ Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your o
        
       You can also use <b>"root"</b> user for external connections using your server ip address or by using third party
       software like <a href="https://www.mysql.com/products/workbench/">MySQL Workbench</a> or <a href="https://www.heidisql.com/">HeidiSQL</a>
+      
+      ![GitHub Logo](https://raw.githubusercontent.com/marekhadas1989/lampstackdocker/master/guide/phpmyadmin.PNG)

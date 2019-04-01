@@ -147,3 +147,19 @@ Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your o
 5. Put your file in <b>/etc/default-ssl.conf</b>
 6. Restart your container, you should be all set with SSL.
    
+    <h1>Defaults</h1>
+        * By default MySQL server binds to 0.0.0.0, server will be accessible from anywhere.
+   
+      <b>Default MySQL users are as follows:</b><br>
+       
+        U:root@'%'
+        P:root  
+         
+        U:phpmyadmin@'localhost'
+        P:9wBVSFCcyzAY
+        
+      Depends on how you are going to use your database you can either connect from 
+       localhost by using <b>"phpmyadmin"</b> user.
+       
+      You can also use <b>"root"</b> user for external connections using your server ip address or by using third party
+      software like <a href="https://www.mysql.com/products/workbench/">MySQL Workbench</a> or <a href="https://www.heidisql.com/">HeidiSQL</a>

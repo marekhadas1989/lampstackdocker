@@ -2,7 +2,7 @@
 
 echo "######################################################"
 echo "######################################################"
-echo "MySQL INIT STARTED $(date)"
+echo "## MySQL INIT STARTED $(date)                       ##"
 echo "######################################################"
 echo "######################################################"
 echo "      											    "
@@ -17,21 +17,31 @@ while [[ RET -ne 0 ]]; do
     RET=$?
 done
 
-mysql -uroot -e "CREATE USER IF NOT EXISTS 'admin'@'localhost' IDENTIFIED BY 'admin'"
-mysql -uroot -e "GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION"
+mysql -uroot -e "CREATE USER IF NOT EXISTS 'phpmyadmin'@'localhost' IDENTIFIED BY '9wBVSFCcyzAY'"
+mysql -uroot -e "GRANT ALL PRIVILEGES ON *.* TO 'phpmyadmin'@'localhost' WITH GRANT OPTION"
 
 mysql -uroot < /usr/share/phpmyadmin/sql/create_tables.sql
 
 mysql -uroot -e "CREATE USER IF NOT EXISTS 'root'@'%' IDENTIFIED BY 'root'"
 mysql -uroot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION"
 
-echo "                                                                       "
-echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-echo "@@@@@@@@@@@@@@Default user 'root' WITH PASSWORD 'root'@@@@@@@@@@@@@@@@@"
-echo "@@Created succesfully,for security reason please change your password@@"
-echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-echo "                                                                       "
+echo "                                                                                    "
+echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+echo "@@@@@@@@@@@@@@phpMyAdmin user 'phpmyadmin@localhost' WITH PASSWORD '9wBVSFCcyzAY'@@@"
+echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+echo "                                                                                    "
 
+echo "                                                                        "
+echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+echo "@@@@@@@@@@@@@@Default user 'root%' WITH PASSWORD 'root'@@@@@@@@@@@@@@@@@"
+echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+echo "                                                                        "
+
+echo "                                                                        "
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "!!!!!!!!!!!!!Please change both of your password IMMEDIATELLY!!!!!!!!!!!"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "                                                                        "
 
 mysqladmin -uroot shutdown
 

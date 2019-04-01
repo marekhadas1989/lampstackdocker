@@ -3,10 +3,9 @@ version : '3.3'
 services :
 
   lampX86 :
-    image : marekhadas9/lampstack:latest
+    image : marekhadas9/lampstack:x86
     ports :
       - 80:80
-      - 443:443
       - 3306:3306
     volumes :
       - /var/www/html:/var/www/html

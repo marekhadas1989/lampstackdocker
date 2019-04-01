@@ -71,6 +71,7 @@ RUN apt-get -fy install phpmyadmin
 
 COPY ./phpmyadmin/phpmyadmin.conf ./etc/apache2/conf-enabled/phpmyadmin.conf
 COPY ./phpmyadmin/config.inc.php ./etc/phpmyadmin/config.inc.php
+COPY ./phpmyadmin/config-db.php ./etc/phpmyadmin/config-db.php
 
 ##########################
 ##########SETUP###########

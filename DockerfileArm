@@ -78,6 +78,7 @@ COPY ./conf/my.cnf ./etc/my.cnf
 
 EXPOSE 3306 80
 
+RUN mkdir -p /var/lib/mysql
 RUN mkdir -p /var/run/mysqld
 RUN chmod 0444 ./etc/my.cnf
 RUN chown mysql:mysql ./etc/my.cnf

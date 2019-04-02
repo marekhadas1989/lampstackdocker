@@ -1,7 +1,7 @@
 ![GitHub Logo](https://raw.githubusercontent.com/marekhadas1989/lampstackdocker/master/guide/logo.png)
 # LAMP STACK docker build based on Ubuntu 18.04.2 Image
 
-[ ARM / x86 ] LAMP STACK docker-based environment designed to work on either ARM architecture based systems as well as on standard x86 platform. 
+[ ARM / x86 ] LAMP STACK docker-based environment designed to work on either ARM architecture based systems as well as standard x86 platform. 
 Depends on selected platform package availability may vary due to internal operating system limitations, please refer to the description below.
 
 <h3>Utils available out of the box regardles of selected platform<h3>
@@ -112,10 +112,10 @@ $ docker-compose -f /path_to_file/composeARM.yaml up
 ```
 
 <h1>Bringing up SSL to life</h1>
-SSL certification process can be sorted out by using <a href="https://certbot.eff.org/">certboot</a> tool included in SSL version of provided images</a>.
+SSL certification process can be sorted out by using <a href="https://certbot.eff.org/">certboot</a> tool embeded within SSL version of provided images</a>.
 Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your own free globally trusted SSL certificate.
 
-1. Download <b>composeX86ssl.yaml</b> from my git repository and put it on your server, then run from command line.
+1. Download <b>composeX86ssl.yaml</b> from project git repository and put it on your server, then execute from command line.
 
     ```$ sudo su```
 

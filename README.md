@@ -5,7 +5,7 @@
 This setup has been designed to work on either ARM as well as on standard x86-32/64 based platform. 
 Depends on selected platform package availability may vary due to internal operating system limitations, please refer to the description below.
 
-<h3>Utils available regardles of selected platform out of the box<h3>
+<h3>Utils available regardless of the selected platform out of the box<h3>
 <ul>
    <li>htop</li>
    <li>ncdu</li>

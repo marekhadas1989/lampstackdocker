@@ -113,7 +113,7 @@ By default when using docker you should consider all the data produced by your w
 
 Speaking of Apache server to persist the data you should map default location of your server into any location on your host machine, to do so all you have to do is just to pass additional parameter as listed below. First part of following command is related to the location on your host machine whereas second one is related to the default location of the web server inside container.
 
-<b>"-v /docker_lamp/persist_www:/var/www/html"</b> parameter,
+<b>"-v /docker_lamp/persist_www:/var/www/html"</b>,
 
 In the same way you can proceed with the MySQL
 

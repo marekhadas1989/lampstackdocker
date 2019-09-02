@@ -1,10 +1,11 @@
 ![GitHub Logo](https://raw.githubusercontent.com/marekhadas1989/lampstackdocker/master/guide/logo.png)
 # LAMP STACK docker build based on Ubuntu 18.04.2 Image
 
-[ ARM / x86 ] LAMP STACK docker-based environment designed to work on either ARM architecture based systems as well as standard x86 platform. 
+[ ARM / x86 ] LAMP STACK docker-based environment. 
+This setup has been designed to work on either ARM as well as on standard x86-32/64 based platform. 
 Depends on selected platform package availability may vary due to internal operating system limitations, please refer to the description below.
 
-<h3>Utils available out of the box regardles of selected platform<h3>
+<h3>Utils available regardles of selected platform out of the box<h3>
 <ul>
    <li>htop</li>
    <li>ncdu</li>
@@ -73,27 +74,22 @@ Depends on selected platform package availability may vary due to internal opera
 </ul>
 
 <h1>ARM Variant (4.20.7-sunxi armv7l) 32-bit</h1>
-Apart from minor differences as listed below it has pretty much the same specs.
+Both images have got same specs apart from minor differences limited by the package availability.
 <br/><br/>
 Known Limitations:
 <br/>
 
 * By 01/03/2019 Google Page Speed was not available for ARM microarchitecture.
 
-* Latest available version of MySQL for ARM based devices during that built was 5.7.25.
+* Some of the packages are in older version compares to x86 platform.<br> 
+This is purely caused by the popularity of ARM platform.
+To even out any differences in terms of software versioning you can use provided <b>docker-compose</b> file.
 
 <h1>Quick Start</h1>
 
-Quick start can be done by either issuing following commands or by using <b>docker-compose</b> files provided for each platform.
-
-
-* Data persistency can be done by passing additional <b>"-v /docker_lamp/persist_www:/var/www/html"</b> parameter, 
-this command will map internal <b>"/var/www/html"</b> folder into <b>"/docker_lamp/persist_www"</b> on your local machine.<br>
-In the same way MySQL data can be mapped by passing again <b>"-v /docker_lamp/persist_mysql:/var/lib/mysql"</b> <br><br>
-It is entirely up to you where you want to store the data, this is just an example of how to use it.
-
-
-* By using provided <b>docker-compose</b> files data persistency will be turned on automatically for both MySQL and Apache.
+Easiest way to start is to use <b>docker-compose</b> files available for each platform.
+You can start by issuing commands manually as listed below as well.
+Either way you will get the same result.
 
 <h5>x86 (non SSL)</h5>
 
@@ -111,11 +107,30 @@ $ docker run -p 3306:3306 -p 80:80 -d -v /docker_lamp/persist_mysql:/var/lib/mys
 $ docker-compose -f /path_to_file/composeARM.yaml up
 ```
 
-<h1>Bringing up SSL to life</h1>
-SSL certification process can be sorted out by using <a href="https://certbot.eff.org/">certboot</a> tool embeded within SSL version of provided images</a>.
-Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your own free globally trusted SSL certificate.
+<h1>Data persistency</h1>
 
-1. Download <b>composeX86ssl.yaml</b> from project git repository and put it on your server, then execute from command line.
+By default when using docker you should consider all the data produced by your website or database as ephemeral, to stop this from happening you have to map folders you are going to use into volumes.
+
+Speaking of Apache server to persist the data you should map default location of your server into any location on your host machine, to do so all you have to do is just to pass additional parameter as listed below. First part of following command is related to the location on your host machine whereas second one is related to the default location of the web server inside container.
+
+<b>"-v /docker_lamp/persist_www:/var/www/html"</b> parameter,
+
+In the same way you can proceed with the MySQL
+
+<b>"-v /docker_lamp/persist_mysql:/var/lib/mysql"</b> <br><br>
+Please note that this is not a MUST it's entirely up to you whether you want to persist the data and where exacly, this is just a basic example so to help you to better understand the general concept behind.
+
+Should you have any problems with typing commands by hand, feel free to use <b>docker-compose</b> files instead. This will help you to save tremendous amount of time, not to mention about handling persistency in a proper way.
+
+<h1>Bringing up SSL to life</h1>
+
+SSL certification process can handled by using <a href="https://certbot.eff.org/">certboot</a>.
+This is basically a tool embeded within the images you can use to obtain free certificate valid for 3 months. 
+You can obviously freely recure it before it's about to expire.
+
+Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> script you can have your own free globally trusted SSL certificate.
+
+1. Run your container in the way it was mentioned earlier on, by hand or by using compose file, up to you.
 
     ```$ sudo su```
 
@@ -123,8 +138,10 @@ Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your o
     
     ![GitHub Logo](https://raw.githubusercontent.com/marekhadas1989/lampstackdocker/master/guide/howto1.PNG)
 
-2. Now it's time to identify your current unique <b>container id</b>.<br/>
-   To do so open another terminal window and run while your container is running:<br/> 
+2. You have to identify your current unique <b>container id</b>.<br/>
+   To do so open another terminal window and run while your container is running.
+   *You can obviously use existing one if you are runing container in detached mode:
+   <br/> 
 
     ```$ sudo su```
  
@@ -132,23 +149,26 @@ Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your o
      
     ![GitHub Logo](https://raw.githubusercontent.com/marekhadas1989/lampstackdocker/master/guide/howto2.PNG)
 
-3. You need to know at least first 3 characters of <b>container id</b> returned by above command (You can use as many characters as you wish, it is just about identifying unique container especially if there is more than one having similar <b>container id</b> running on your machine).<br>
+3. Every container has got it's unique container id, to identify it you need to use at least first 3 characters or more.
+(You can use as many characters as you wish, it is only about to identify unique container)
+<br>
 4. Now using mentioned <b>container id</b> run:
 
-    ```$ docker exec -it 32f bash```
+    ```$ docker exec -it replace_with_container_id bash```
  
     Then run:
  
     ```$ certbot --apache certonly```
     
-    To issue your brand new certificate and then follow the guidelines displayed on your screen.
+    then follow the guidelines displayed on your screen.
     
-4. Download <b>/conf/default-ssl.conf</b> from my git repository and update it accordingly to the domain name for which you were issuing certificate earlier.
+4. Download <b>/conf/default-ssl.conf</b> and update it accordingly with the domain name for which you were issued certificate earlier.
 5. Put your file in <b>/etc/default-ssl.conf</b>
 6. Restart your container, you should be all set with SSL.
    
     <h1>Defaults</h1>
         * By default MySQL server binds to 0.0.0.0, server will be accessible from anywhere.
+        This is causing potential security threat, so it is worth to mention as you have to be concious about that fact.
    
       <b>Default MySQL users are as follows:</b><br>
        
@@ -159,9 +179,9 @@ Thanks to <a href="https://letsencrypt.org/">letsencrypt</a> you can have your o
         P:9wBVSFCcyzAY
         
       Depends on how you are going to use your database you can either connect from 
-       localhost by using <b>"phpmyadmin"</b> user.
+      localhost by using <b>"phpmyadmin"</b> user.
        
-      You can also use <b>"root"</b> user for external connections using your server ip address or by using third party
+      Or you can also use <b>"root"</b> user for external connections using your server ip address or by using third party
       software like <a href="https://www.mysql.com/products/workbench/">MySQL Workbench</a> or <a href="https://www.heidisql.com/">HeidiSQL</a>
       
       ![GitHub Logo](https://raw.githubusercontent.com/marekhadas1989/lampstackdocker/master/guide/phpmyadmin.PNG)

@@ -3,7 +3,7 @@
 
 [ ARM / x86 ] LAMP STACK docker-based environment. 
 This setup has been designed to work on either ARM as well as on standard x86-32/64 based platform. 
-Depends on selected platform package availability may vary due to internal operating system limitations, please refer to the description below.
+Depends on the selected platform package availability may vary due to internal operating system limitations, please refer to the description below.
 
 <h3>Utils available regardless of the selected platform out of the box<h3>
 <ul>
@@ -15,7 +15,7 @@ Depends on selected platform package availability may vary due to internal opera
    <li>supervisor</li>
 </ul>
    
-<h1>x86 Variant consists of following packages</h1>
+<h1>x86 Variant consists of the following packages</h1>
 
 1. Certbot for HTTP encryption (* SSL version only)
 2. phpMyAdmin 4.6.6
@@ -74,16 +74,16 @@ Depends on selected platform package availability may vary due to internal opera
 </ul>
 
 <h1>ARM Variant (4.20.7-sunxi armv7l) 32-bit</h1>
-Both images have got same specs apart from minor differences limited by the package availability.
+Both images have got the same specs apart from minor differences limited by the package availability.
 <br/><br/>
 Known Limitations:
 <br/>
 
 * By 01/03/2019 Google Page Speed was not available for ARM microarchitecture.
 
-* Some of the packages are in older version compares to x86 platform.<br> 
+* Some of the packages are in older versions compares to x86 platform.<br> 
 This is purely caused by the popularity of ARM platform.
-To even out any differences in terms of software versioning you can use provided <b>docker-compose</b> file.
+To even out any differences as mentioned you can use provided <b>Dockerfile</b> so to make your own build.
 
 <h1>Quick Start</h1>
 
